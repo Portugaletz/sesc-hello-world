@@ -1,4 +1,4 @@
-PROGRAM= prog.c
+PROGRAM= prog
 
 run: ${PROGRAM}
     ./${PROGRAM}
