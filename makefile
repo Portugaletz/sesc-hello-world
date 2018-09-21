@@ -1,9 +1,7 @@
-PROGRAM = prog
+run: prog
+    ./prog
 
-run: $(PROGRAM)
-    ./$(PROGRAM)
+prog: prog.c
+    gcc -Wall -std=c11 prog.c -o prog
 
-$(PROGRAM): $(PROGRAM).c
-    gcc -Wall -std=c11 $(PROGRAM).c -o $(PROGRAM)
-
-build: $(PROGRAM)
+build: prog
